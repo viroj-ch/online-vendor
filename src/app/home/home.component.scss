@@ -31,8 +31,8 @@
        * but this time positioned differently to better suit a
        * landscape orientation. */
        grid-template-areas: 
-       "product sell"
-       "inventory sell"
+       "product sale"
+       "inventory sale"
        "purchase report";
 
        grid-gap: 1rem;
@@ -47,7 +47,7 @@
   /* The grid-area property places a grid item into a named
    * area of the grid. */
   #product    { grid-area: product; background-color: #63d17b; }
-  #sell    { grid-area: sell; background-color: #d2dd6d; }
+  #sale    { grid-area: sale; background-color: #d2dd6d; }
   #inventory    { grid-area: inventory; background-color: #ddad6d; }
   #purchase    { grid-area: purchase; background-color: #dd6db8; } 
   #report { grid-area: report; background-color: #6dd6dd; }
@@ -67,3 +67,17 @@ a {
   text-decoration: none;
   color: #fff;
  }
+
+
+
+.box { position:relative; }
+.box .image,
+.box .text {transition: opacity 0.5s ease-in-out;}
+.box .text {
+position: absolute;
+  top: 50%;  left: 50%;  transform: translate(-50%, -50%);
+  opacity:0; font-size: 150%; 
+}
+
+.box:hover .image {opacity:0;}
+.box:hover .text {opacity:1;}
