@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router'; 
+import { ProductService } from './../product.service'
 
 @Component({
   selector: 'app-product',
@@ -8,11 +9,16 @@ import { Router } from '@angular/router';
 })
 export class ProductComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private productService : ProductService) { }
 
+  product : any = {};
   ngOnInit() {
   }
 
+  addProduct(){
+    this.productService.addProduct(this.product)
+      .subscribe(res => console.log(res));
+  }
 
   moveToHome(){
 

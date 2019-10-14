@@ -1,0 +1,52 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    height:500px;
+    width:500px;
+    margin: auto;
+    margin-top: 25px;
+    border: 1px solid #888;
+    border-radius: 10%;
+    // align-self: center;
+}
+
+.product-field{
+    width:80%;
+}
+
+.image-upload-field{
+    display:flex;
+    flex-direction: row;
+    width:400px;
+    border-bottom : 1px dashed #999; 
+
+}
+.image-upload-field label{
+
+    
+}
+
+.image-upload-field .image-upload-info{
+    display:flex;
+    align-items: center;
+    flex:3;
+    justify-content: space-around;
+}
+
+
+.image-upload-info .image-upload-label{
+    flex:1;
+    margin-left : 10px;
+}
+
+.image-upload-info .image-upload-file-info{
+    flex:2;  
+
+
+}
+
+.image-upload-field .image-upload-button{
+    flex:1;
+}

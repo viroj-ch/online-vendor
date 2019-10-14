@@ -1,4 +1,39 @@
-<p>product works!</p>
+<div class="product-container">
+    <mat-form-field class="product-field">
+        <input matInput placeholder="Barcode" [(ngModel)]="product.barcode">
+    </mat-form-field>
+
+    <mat-form-field class="product-field">
+        <input matInput placeholder="Product name" [(ngModel)]="product.name">
+    </mat-form-field>
+
+    <mat-form-field class="product-field">
+        <textarea matInput placeholder="Product description" [(ngModel)]="product.description"></textarea>
+    </mat-form-field>
+   
+    <div class="image-upload-field">
+
+        <div class="image-upload-info">
+            <input hidden="true" id="input-file-id" multiple type="file" #file [(ngModel)]="product.image"/>
+            <label class="image-upload-label">Image : </label>
+            <span class="image-upload-file-info">{{product.image?.split("\\").pop()}}</span>
+        </div>
+
+
+        <label for="input-file-id" class="image-upload-button">
+            <button (click)="file.click()"  mat-button color="accent">Add image</button>
+        </label>
+            
+            
+    </div>
+
+    
+
+
+    <!-- <label for="input-file-id" class="md-button md-raised md-primary">Choose Files</label> -->
+    <button class="product-button" mat-button primary (click)="addProduct()">Add new product</button>
+</div>
+
 
 
 <button mat-raised-button (click)="moveToHome()">back</button>

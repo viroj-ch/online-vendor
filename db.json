@@ -1,14 +1,26 @@
 {
-    "products": [
-        {
-            "id":1,
-            "name":"IPhone XR",
-            "description":"IPhone XR description"
-        },
-        {
-            "id":2,
-            "name":"IPhone 8 PLUS",
-            "description":"IPhone 8 PLUS description"
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "IPhone XR",
+      "description": "IPhone XR description"
+    },
+    {
+      "id": 2,
+      "name": "IPhone 8 PLUS",
+      "description": "IPhone 8 PLUS description"
+    },
+    {
+      "name": "Pillow",
+      "description": "Fluffy pillow",
+      "id": 3
+    },
+    {
+      "name": "mouce",
+      "description": "Interactable physical operator for virtual mouse displayed on monitor ",
+      "barcode": "12345",
+      "image": "C:\\fakepath\\Settings.json",
+      "id": 4
+    }
+  ]
 }
